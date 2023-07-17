@@ -63,6 +63,7 @@ img {
 /*==== MAIN NAVBAR ==== */
 .navbar {
     background-color: whitesmoke;
+    position: relative;
 }
 .nav-wrapper {
     height: 90px;
@@ -123,6 +124,9 @@ img {
 .menu-icon {
     font-size: 2rem;
 }
+.nav-item {
+    margin-bottom: 0;
+}
 @media screen and (max-width:1050px){
     .nav-items {
         gap: 1.5rem;
@@ -132,7 +136,24 @@ img {
     .nav-items {
         display: none;
     }
+    .show-items {
+        display: block;
+    }
     .menu {
         display: block;
+    }
+    .nav-items {
+        position: absolute;
+        top: 100%;
+        background-color: rgb(248, 243, 243);
+        width: 100%;
+        left: 0;
+    }
+    .nav-item {
+        width: 90%;
+        margin: 1.5rem auto;
+    }
+    .btn {
+        display: inline-block;
     }
 }
