@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 90%;
+    margin: auto;
+}
+/*==== TOP NAVBAR ==== */
+.top-nav {
+    background-color: #0e9379;
+}
+.t-nav-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+    color: white;
+}
+.t-nav-address {
+    display: flex;
+    gap: 1rem;
+}
+.t-nav-address p i{
+    margin-right: 10px;
+}
+.email {
+    cursor: pointer;
+}
+.t-social-icons {
+    color: white;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+.social-icon {
+    color: white;
+    cursor: pointer;
+}
+.social-icon:hover {
+    color: black;
+}
+@media screen and (max-width:768px) {
+    .t-social-icons{
+        display: none;
+    }
+}
+@media screen and (max-width:540px) {
+    .t-nav-address {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
