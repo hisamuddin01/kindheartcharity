@@ -304,14 +304,6 @@ a {
     }
 }
 @media screen and (max-width:768px) {
-    .cards {
-        flex-wrap: wrap;
-    }
-    .card {
-        padding: 5rem;
-    }
-}
-@media screen and (max-width:768px) {
     .section-title {
         font-size: 40px;
     }
@@ -320,6 +312,7 @@ a {
         background: #FFF;
         border-radius: 1rem;
         box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+        padding: 5rem;
     }
     .card:hover .card-img {
         transform: none;
@@ -403,4 +396,25 @@ a {
     color: #0e9379;
     font-size: 3.5rem;
     font-weight: 900;
+}
+@media screen and (max-width:990px)  {
+    .wrapper {
+        flex-direction: column;
+    }
+    .box-content {
+        place-content: initial;
+    }
+}
+@media screen and (max-width:768px)  {
+    .secondary-title {
+        font-size: 1.3rem;
+    }
+    .box-2 {
+        grid-column: 1/5;
+    }
+    .box-3 {
+        grid-column: 1/5;
+        display: flex;
+        gap: 2rem;
+    }
 }
